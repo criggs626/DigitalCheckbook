@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="55px">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Place of Buisness"
+        android:id="@+id/buisness"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:id="@+id/ammount"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="1000px">
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date">
+
+        </DatePicker>
+    </ScrollView>
+
+
+</LinearLayout>
