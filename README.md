@@ -5,4 +5,4 @@ This applicationis designed to balnce an account on an android device with a fin
 ## To-Do
 
 - [x] Upload completed code
-- [ ] Look into extra decimals
+- [x] Look into extra decimals
