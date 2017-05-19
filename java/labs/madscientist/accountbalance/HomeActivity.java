@@ -107,6 +107,7 @@ public class HomeActivity extends AppCompatActivity {
                 String date = month + "/" + day + "/" + year;
                 String operation = "+";
                 balance += ammount;
+		balance=Math.round(balance*100.0)/100.0;
                 try {
                     JSONObject temp = new JSONObject();
                     temp.put("ammount", ammount.toString());
@@ -157,6 +158,7 @@ public class HomeActivity extends AppCompatActivity {
                 String date = month + "/" + day + "/" + year;
                 String operation = "-";
                 balance -= ammount;
+		balance=Math.round(balance*100.0)/100.0;
                 try {
                     JSONObject temp = new JSONObject();
                     temp.put("ammount", ammount.toString());
