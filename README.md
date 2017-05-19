@@ -6,3 +6,4 @@ This applicationis designed to balnce an account on an android device with a fin
 
 - [x] Upload completed code
 - [x] Look into extra decimals
+- [ ] Add JSON import and export
