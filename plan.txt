@@ -1,0 +1,23 @@
+For saving file:
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+public void exportTransactions(String transactions) {
+    File file = new File(Environment.getExternalStoragePublicDirectory(
+            Environment.DIRECTORY_DOWNLOADS), "transactions.json");
+    if (!file.mkdirs()) {
+        Log.e(LOG_TAG, "Directory not created");
+    }
+    FileOutputStream stream= new FileOutputStream(file);
+    try{
+        stream.write(transactiosn.getBytes());
+    } finally {
+        stream.close();
+    }
+}
+
+Import file:
+
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
